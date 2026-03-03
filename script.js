@@ -1,20 +1,17 @@
 // ============================================
-// モモル LP - JavaScript
+// モモル LP v3 - JavaScript
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
   // --- Navbar scroll effect ---
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 50) {
+    if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
-    lastScroll = currentScroll;
   });
 
   // --- Hamburger menu ---
@@ -27,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('open');
     });
 
-    // Close menu on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -45,18 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         // Stagger animation for siblings
         const parent = entry.target.parentElement;
-        const siblings = parent ? parent.querySelectorAll('[data-animate]') : [];
+        const siblings = parent ? Array.from(parent.querySelectorAll('[data-animate]')) : [];
         let delay = 0;
 
-        siblings.forEach((sibling, i) => {
-          if (sibling === entry.target) {
-            delay = i * 100;
-          }
-        });
+        const idx = siblings.indexOf(entry.target);
+        if (idx > -1) {
+          delay = idx * 100;
+        }
 
         setTimeout(() => {
           entry.target.classList.add('visible');
@@ -95,10 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const target = document.querySelector(href);
       if (target) {
-        const navHeight = navbar.offsetHeight;
+        const navHeight = navbar ? navbar.offsetHeight : 0;
         const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
 
         window.scrollTo({
@@ -111,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Parallax-like effect on hero shapes ---
   const shapes = document.querySelectorAll('.shape');
-  
+
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     if (scrollY < window.innerHeight) {

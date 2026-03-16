@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- ナビバー -->
+<body class="subpage-body">
+
+  <!-- ナビバー（共通） -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
@@ -20,210 +21,220 @@
         <span class="nav-logo-text">モモル</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#about" class="nav-link">モモルって？</a>
-        <a href="index.html#features" class="nav-link">特徴</a>
+        <a href="index.html#features" class="nav-link">できること</a>
         <a href="index.html#how-it-works" class="nav-link">使い方</a>
         <a href="index.html#faq" class="nav-link">FAQ</a>
-        <a href="guide.html" class="nav-link">はじめかた</a>
       </div>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">テスト参加する</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">
+        テスト参加する
+      </a>
       <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html#about" class="mobile-link">モモルって？</a>
-      <a href="index.html#features" class="mobile-link">特徴</a>
+      <a href="index.html#features" class="mobile-link">できること</a>
       <a href="index.html#how-it-works" class="mobile-link">使い方</a>
       <a href="index.html#faq" class="mobile-link">FAQ</a>
-      <a href="guide.html" class="mobile-link">はじめかた</a>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">テスト参加する</a>
+      <a href="guide.html" class="mobile-link">はじめかたガイド</a>
+      <a href="faq.html" class="mobile-link">よくある質問</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">
+        テスト参加する
+      </a>
     </div>
   </nav>
 
-  <div class="faq-page">
-    <div class="faq-page-inner">
-      <h1 class="faq-page-title">よくある質問</h1>
+  <!-- ページヘッダー -->
+  <div class="subpage-hero">
+    <h1>よくある質問</h1>
+    <p>モモルについてのよくある質問をまとめました</p>
+  </div>
 
-      <!-- カテゴリ: モモルについて -->
-      <div class="faq-category">
-        <h2 class="faq-category-title">モモルについて</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>モモルってなんですか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>モモルは、育児中のママ・パパをサポートするAI育児コンシェルジュです。日々の育児の悩みや愚痴を聞いてくれたり、育児の記録を自動でつけてくれたり、パパに今日の様子をやさしく届けてくれます。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>どんな端末で使えますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>現在はiOS端末（iPhone）でご利用いただけます。TestFlightアプリ経由でインストールしていただきます。Android版は今後対応予定です。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>パパもアプリをインストールする必要がありますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>はい。パパにも同じ手順でモモルをインストールしていただき、ママの「マイページ」にある招待QRコードを読み取ることでパートナー連携ができます。連携すると、共有カードの確認やスタンプの送信ができるようになります。</p>
-            </div>
+  <!-- コンテンツ -->
+  <div class="subpage-content">
+
+    <!-- カテゴリ: モモルについて -->
+    <div class="faq-page-section">
+      <h2>モモルについて</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>モモルってなんですか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>モモルは、育児中のママ・パパをサポートするAI育児コンシェルジュです。日々の育児の悩みや愚痴を聞いてくれたり、育児の記録を自動でつけてくれたり、パパに今日の様子をやさしく届けてくれます。</p>
           </div>
         </div>
-      </div>
-
-      <!-- カテゴリ: 料金・プラン -->
-      <div class="faq-category">
-        <h2 class="faq-category-title">料金・プラン</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>テスト期間中は無料ですか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>はい、テスト期間中はすべての機能を完全無料でご利用いただけます。テスト終了後に有料プランへの移行をご案内する予定ですが、強制ではありません。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>テスト終了後は有料になりますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>テスト終了後に有料プランへの移行をご案内する予定です。料金詳細は正式リリース時にお知らせします。テスト期間中に有料プランへの自動移行はありません。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>テストに参加するにはどうすればいいですか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p><a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>を友達追加していただくと、TestFlightの招待リンクを自動でお届けします。</p>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>どんな端末で使えますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>現在はiOS端末（iPhone）でご利用いただけます。TestFlightアプリ経由でインストールしていただきます。Android版は今後対応予定です。</p>
           </div>
         </div>
-      </div>
-
-      <!-- カテゴリ: 機能について -->
-      <div class="faq-category">
-        <h2 class="faq-category-title">機能について</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>おはなし（チャット）ではどんなことを話せますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>育児の悩み、ちょっとした愚痴、嬉しかったこと、育児に関する相談など、なんでもお話しいただけます。モモルはあなたの気持ちに寄り添って、やさしく応えてくれます。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>共有カードとは何ですか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>ママとモモルの会話をもとに、その日の育児の様子をやさしくまとめたカードです。パートナー連携をしていると、パパのアプリに自動で届きます。パパはスタンプで気持ちを返すことができます。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>育児記録はどうやってつけるのですか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>モモルとの会話の中で、授乳・睡眠・離乳食などの情報が自動的に記録されます。手動で追加・修正することもできます。「レポート」タブから記録を確認できます。</p>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>パパもアプリをインストールする必要がありますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>はい。パパにも同じ手順でモモルをインストールしていただき、ママの「マイページ」にある招待QRコードを読み取ることでパートナー連携ができます。連携すると、共有カードの確認やスタンプの送信ができるようになります。</p>
           </div>
         </div>
-      </div>
-
-      <!-- カテゴリ: あんしん・データ保護 -->
-      <div class="faq-category">
-        <h2 class="faq-category-title">あんしん・データ保護</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>会話の内容は誰かに見られていますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>会話データは暗号化してサーバーに保存されます。運営チームが会話の中身を読むことはありません。詳しくは<a href="privacy.html" style="color: var(--primary); font-weight: 600;">プライバシーポリシー</a>をご確認ください。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>子どもの情報は安全に守られていますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>お子さまの情報は暗号化して保存しており、第三者への提供は一切行いません。個人情報の取り扱いについては<a href="privacy.html" style="color: var(--primary); font-weight: 600;">プライバシーポリシー</a>に詳しく記載しています。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>AIが変なことを教えたりしませんか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>育児の専門知識をもとに設計されており、セーフティフィルターも搭載しています。ただし、AIの回答はあくまで参考情報です。お子さまの健康に関する判断は、必ず医療の専門家にご相談ください。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>アプリを消したらデータはどうなりますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>アプリを削除すると、端末に保存されている会話データは消去されます。アカウント情報やサーバーに保存されたデータ（プロフィール、共有カードなど）は残りますので、再インストール後にログインすれば復元されます。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- カテゴリ: アカウント・その他 -->
-      <div class="faq-category">
-        <h2 class="faq-category-title">アカウント・その他</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>機種変更のときにデータを引き継げますか？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>同じアカウントでログインすれば、プロフィールや共有カードなどのサーバーデータは引き継がれます。ただし、端末に保存されている会話履歴は引き継げませんのでご了承ください。</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span>退会・データ削除をしたいときは？</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p><a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からお問い合わせください。アカウントの削除およびサーバーに保存されたデータの完全消去を承ります。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- お問い合わせ -->
-      <div class="guide-help" style="margin-top: 32px;">
-        <h2 class="guide-help-title">解決しないときは</h2>
-        <p class="guide-help-text">
-          <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener">LINE公式アカウント</a>からお気軽にお問い合わせください。<br>
-          担当者が直接サポートいたします。
-        </p>
       </div>
     </div>
+
+    <!-- カテゴリ: 料金・プラン -->
+    <div class="faq-page-section">
+      <h2>料金・プラン</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>テスト期間中は無料ですか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>はい、テスト期間中はすべての機能を完全無料でご利用いただけます。テスト終了後に有料プランへの移行をご案内する予定ですが、強制ではありません。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>テスト終了後は有料になりますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>テスト終了後に有料プランへの移行をご案内する予定です。料金詳細は正式リリース時にお知らせします。テスト期間中に有料プランへの自動移行はありません。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>テストに参加するにはどうすればいいですか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>を友達追加していただくと、TestFlightの招待リンクを自動でお届けします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- カテゴリ: 機能について -->
+    <div class="faq-page-section">
+      <h2>機能について</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>おはなし（チャット）ではどんなことを話せますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>育児の悩み、ちょっとした愚痴、嬉しかったこと、育児に関する相談など、なんでもお話しいただけます。モモルはあなたの気持ちに寄り添って、やさしく応えてくれます。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>共有カードとは何ですか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>ママとモモルの会話をもとに、その日の育児の様子をやさしくまとめたカードです。パートナー連携をしていると、パパのアプリに自動で届きます。パパはスタンプで気持ちを返すことができます。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>育児記録はどうやってつけるのですか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>モモルとの会話の中で、授乳・睡眠・離乳食などの情報が自動的に記録されます。手動で追加・修正することもできます。「レポート」タブから記録を確認できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- カテゴリ: あんしん・データ保護 -->
+    <div class="faq-page-section">
+      <h2>あんしん・データ保護</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>会話の内容は誰かに見られていますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>会話データは暗号化してサーバーに保存されます。運営チームが会話の中身を読むことはありません。詳しくは<a href="privacy.html" style="color: var(--primary); font-weight: 600;">プライバシーポリシー</a>をご確認ください。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>子どもの情報は安全に守られていますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>お子さまの情報は暗号化して保存しており、第三者への提供は一切行いません。個人情報の取り扱いについては<a href="privacy.html" style="color: var(--primary); font-weight: 600;">プライバシーポリシー</a>に詳しく記載しています。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>AIが変なことを教えたりしませんか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>育児の専門知識をもとに設計されており、セーフティフィルターも搭載しています。ただし、AIの回答はあくまで参考情報です。お子さまの健康に関する判断は、必ず医療の専門家にご相談ください。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>アプリを消したらデータはどうなりますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>アプリを削除すると、端末に保存されている会話データは消去されます。アカウント情報やサーバーに保存されたデータ（プロフィール、共有カードなど）は残りますので、再インストール後にログインすれば復元されます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- カテゴリ: アカウント・その他 -->
+    <div class="faq-page-section">
+      <h2>アカウント・その他</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>機種変更のときにデータを引き継げますか？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>同じアカウントでログインすれば、プロフィールや共有カードなどのサーバーデータは引き継がれます。ただし、端末に保存されている会話履歴は引き継げませんのでご了承ください。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>退会・データ削除をしたいときは？</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からお問い合わせください。アカウントの削除およびサーバーに保存されたデータの完全消去を承ります。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- お問い合わせ -->
+    <div style="background: var(--bg-elevated); border: 1.5px solid var(--border); border-radius: var(--r-xl); padding: 28px 24px; text-align: center; margin-top: 8px;">
+      <p style="font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 8px;">解決しないときは</p>
+      <p style="font-size: 14px; color: var(--text-sub); margin-bottom: 16px;">
+        LINE公式アカウントからお気軽にお問い合わせください。<br>
+        担当者が直接サポートいたします。
+      </p>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="cta-btn" style="font-size: 15px; padding: 12px 28px;">
+        LINEでお問い合わせ
+      </a>
+    </div>
+
   </div>
 
   <!-- フッター -->
@@ -233,7 +244,7 @@
         <div class="footer-brand">
           <img src="images/icon.png" alt="モモル" class="footer-logo">
           <span class="footer-brand-name">モモル</span>
-          <p class="footer-brand-desc">AI育児コンシェルジュ</p>
+          <p class="footer-brand-desc">ママに寄り添う AI コンシェルジュ</p>
         </div>
         <div class="footer-links">
           <a href="index.html">トップ</a>

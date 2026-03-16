@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- ナビバー -->
+<body class="subpage-body">
+
+  <!-- ナビバー（共通） -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
@@ -20,134 +21,122 @@
         <span class="nav-logo-text">モモル</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#about" class="nav-link">モモルって？</a>
-        <a href="index.html#features" class="nav-link">特徴</a>
+        <a href="index.html#features" class="nav-link">できること</a>
         <a href="index.html#how-it-works" class="nav-link">使い方</a>
         <a href="index.html#faq" class="nav-link">FAQ</a>
-        <a href="guide.html" class="nav-link">はじめかた</a>
       </div>
-      <a href="guide.html" class="nav-cta-btn">無料ではじめる</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">
+        テスト参加する
+      </a>
       <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html#about" class="mobile-link">モモルって？</a>
-      <a href="index.html#features" class="mobile-link">特徴</a>
+      <a href="index.html#features" class="mobile-link">できること</a>
       <a href="index.html#how-it-works" class="mobile-link">使い方</a>
       <a href="index.html#faq" class="mobile-link">FAQ</a>
-      <a href="guide.html" class="mobile-link">はじめかた</a>
-      <a href="guide.html" class="mobile-cta-btn">無料ではじめる</a>
+      <a href="guide.html" class="mobile-link">はじめかたガイド</a>
+      <a href="faq.html" class="mobile-link">よくある質問</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">
+        テスト参加する
+      </a>
     </div>
   </nav>
 
-  <div class="legal-page">
-    <div class="legal-inner">
-      <h1 class="legal-title">プライバシーポリシー</h1>
-      <p class="legal-date">最終更新日: 2026年3月3日</p>
+  <!-- ページヘッダー -->
+  <div class="subpage-hero">
+    <h1>プライバシーポリシー</h1>
+    <p>お客さまの個人情報の取り扱いについてご説明します</p>
+  </div>
 
-      <div class="legal-highlight">
-        <p>モモルは、育児中のママ・パパが安心して使えるサービスであることを最も大切にしています。このページでは、お客さまの情報をどのように取り扱っているかをわかりやすくご説明します。</p>
-      </div>
+  <!-- コンテンツ -->
+  <div class="subpage-content">
+    <p class="legal-date">最終更新日: 2026年3月3日</p>
 
-      <div class="legal-section">
-        <h2>1. 運営者情報</h2>
-        <p>本サービス「モモル」（以下「本サービス」）は、以下の者が運営しています。</p>
-        <ul>
-          <li>サービス名: モモル（AI育児コンシェルジュ）</li>
-          <li>お問い合わせ: <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a></li>
-        </ul>
-      </div>
+    <div class="legal-content">
 
-      <div class="legal-section">
-        <h2>2. 収集する情報</h2>
-        <p>本サービスでは、サービスの提供に必要な範囲で以下の情報を収集します。</p>
+      <p>モモルは、育児中のママ・パパが安心して使えるサービスであることを最も大切にしています。このページでは、お客さまの情報をどのように取り扱っているかをわかりやすくご説明します。</p>
 
-        <h3>2-1. お客さまが直接ご提供いただく情報</h3>
-        <ul>
-          <li><strong>アカウント情報</strong>: メールアドレス、ニックネーム（ログイン・本人確認のため）</li>
-          <li><strong>お子さまの情報</strong>: ニックネーム、生年月日（お子さまに合わせた会話を行うため）</li>
-          <li><strong>プロフィール情報</strong>: 役割（ママ/パパ）の選択</li>
-        </ul>
+      <h2>1. 運営者情報</h2>
+      <p>本サービス「モモル」（以下「本サービス」）は、以下の者が運営しています。</p>
+      <ul>
+        <li>サービス名: モモル（AI育児コンシェルジュ）</li>
+        <li>お問い合わせ: <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a></li>
+      </ul>
 
-        <h3>2-2. サービス利用に伴い自動的に生成される情報</h3>
-        <ul>
-          <li><strong>共有カード</strong>: ママとモモルの会話をもとにAIが生成する要約カード（パートナー連携時にパパに共有されます）</li>
-          <li><strong>育児記録</strong>: 会話から自動抽出される授乳・睡眠・離乳食等の記録</li>
-          <li><strong>利用状況データ</strong>: 無料体験の残り回数、サブスクリプションの状態</li>
-        </ul>
+      <h2>2. 収集する情報</h2>
+      <p>本サービスでは、サービスの提供に必要な範囲で以下の情報を収集します。</p>
 
-        <h3>2-3. 端末にのみ保存される情報</h3>
-        <div class="legal-highlight">
-          <p>モモルとの会話データ（チャット履歴）は、お使いの端末内にのみ保存されます。運営チームがモモルとの会話の中身を読むことはありません。</p>
-        </div>
-        <p>会話データはAIの応答生成のためにOpenAI社のAPIに送信されますが、OpenAI社のAPIデータ利用ポリシーに基づき、API経由で送信されたデータはAIモデルのトレーニングには使用されません。</p>
-      </div>
+      <h3>2-1. お客さまが直接ご提供いただく情報</h3>
+      <ul>
+        <li><strong>アカウント情報</strong>: メールアドレス、ニックネーム（ログイン・本人確認のため）</li>
+        <li><strong>お子さまの情報</strong>: ニックネーム、生年月日（お子さまに合わせた会話を行うため）</li>
+        <li><strong>プロフィール情報</strong>: 役割（ママ/パパ）の選択</li>
+      </ul>
 
-      <div class="legal-section">
-        <h2>3. 情報の利用目的</h2>
-        <p>収集した情報は、以下の目的でのみ利用します。</p>
-        <ol>
-          <li>本サービスの提供・運営（AI応答の生成、共有カードの作成、育児記録の管理）</li>
-          <li>お客さまのアカウント管理・認証</li>
-          <li>パートナー間の情報共有機能の提供</li>
-          <li>サービスの改善・不具合の修正</li>
-          <li>お問い合わせへの対応</li>
-          <li>利用状況の集計・分析（個人を特定しない統計データとして）</li>
-        </ol>
-      </div>
+      <h3>2-2. サービス利用に伴い自動的に生成される情報</h3>
+      <ul>
+        <li><strong>共有カード</strong>: ママとモモルの会話をもとにAIが生成する要約カード（パートナー連携時にパパに共有されます）</li>
+        <li><strong>育児記録</strong>: 会話から自動抽出される授乳・睡眠・離乳食等の記録</li>
+        <li><strong>利用状況データ</strong>: 無料体験の残り回数、サブスクリプションの状態</li>
+      </ul>
 
-      <div class="legal-section">
-        <h2>4. 第三者への提供</h2>
-        <div class="legal-highlight">
-          <p>お客さまの個人情報を、広告目的で第三者に販売・提供することは一切ありません。</p>
-        </div>
-        <p>以下の場合に限り、必要最小限の情報を第三者と共有することがあります。</p>
-        <ul>
-          <li><strong>AI応答の生成</strong>: 会話内容をOpenAI社のAPIに送信します（AIモデルのトレーニングには使用されません）</li>
-          <li><strong>決済処理</strong>: サブスクリプションの決済はApple（App Store）を通じて行われます。決済情報は当社では保持しません</li>
-          <li><strong>法令に基づく場合</strong>: 法令の定めにより開示が求められた場合</li>
-        </ul>
-      </div>
+      <h3>2-3. 端末にのみ保存される情報</h3>
+      <p style="background: var(--bg-elevated); border: 1.5px solid var(--border); border-radius: var(--r-md); padding: 14px 18px; margin-bottom: 10px;">
+        モモルとの会話データ（チャット履歴）は、お使いの端末内にのみ保存されます。運営チームがモモルとの会話の中身を読むことはありません。
+      </p>
+      <p>会話データはAIの応答生成のためにOpenAI社のAPIに送信されますが、OpenAI社のAPIデータ利用ポリシーに基づき、API経由で送信されたデータはAIモデルのトレーニングには使用されません。</p>
 
-      <div class="legal-section">
-        <h2>5. データの保管と安全管理</h2>
-        <p>お客さまの情報は、以下の方法で安全に管理しています。</p>
-        <ul>
-          <li>サーバーに保存されるデータは暗号化通信（SSL/TLS）で保護されています</li>
-          <li>アクセス権限は必要最小限の担当者に限定しています</li>
-          <li>会話データは端末内にのみ保存され、サーバーには送信されません</li>
-        </ul>
-      </div>
+      <h2>3. 情報の利用目的</h2>
+      <p>収集した情報は、以下の目的でのみ利用します。</p>
+      <ol>
+        <li>本サービスの提供・運営（AI応答の生成、共有カードの作成、育児記録の管理）</li>
+        <li>お客さまのアカウント管理・認証</li>
+        <li>パートナー間の情報共有機能の提供</li>
+        <li>サービスの改善・不具合の修正</li>
+        <li>お問い合わせへの対応</li>
+        <li>利用状況の集計・分析（個人を特定しない統計データとして）</li>
+      </ol>
 
-      <div class="legal-section">
-        <h2>6. データの削除</h2>
-        <p>お客さまは、いつでもご自身のデータの削除を請求できます。</p>
-        <ul>
-          <li><strong>会話データ</strong>: アプリの削除により端末から消去されます</li>
-          <li><strong>アカウント・サーバーデータ</strong>: <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からご連絡いただければ、アカウントおよびサーバーに保存された全データを完全に削除いたします</li>
-        </ul>
-      </div>
+      <h2>4. 第三者への提供</h2>
+      <p style="background: var(--bg-elevated); border: 1.5px solid var(--border); border-radius: var(--r-md); padding: 14px 18px; margin-bottom: 10px;">
+        お客さまの個人情報を、広告目的で第三者に販売・提供することは一切ありません。
+      </p>
+      <p>以下の場合に限り、必要最小限の情報を第三者と共有することがあります。</p>
+      <ul>
+        <li><strong>AI応答の生成</strong>: 会話内容をOpenAI社のAPIに送信します（AIモデルのトレーニングには使用されません）</li>
+        <li><strong>決済処理</strong>: サブスクリプションの決済はApple（App Store）を通じて行われます。決済情報は当社では保持しません</li>
+        <li><strong>法令に基づく場合</strong>: 法令の定めにより開示が求められた場合</li>
+      </ul>
 
-      <div class="legal-section">
-        <h2>7. お子さまの情報の取り扱い</h2>
-        <p>本サービスはお子さまの情報（ニックネーム・生年月日）をお預かりしますが、これはモモルがお子さまの月齢に合わせた適切な応答を行うためにのみ使用します。お子さまの情報を広告やマーケティングに利用することはありません。</p>
-      </div>
+      <h2>5. データの保管と安全管理</h2>
+      <p>お客さまの情報は、以下の方法で安全に管理しています。</p>
+      <ul>
+        <li>サーバーに保存されるデータは暗号化通信（SSL/TLS）で保護されています</li>
+        <li>アクセス権限は必要最小限の担当者に限定しています</li>
+        <li>会話データは端末内にのみ保存され、サーバーには送信されません</li>
+      </ul>
 
-      <div class="legal-section">
-        <h2>8. Cookieについて</h2>
-        <p>本Webサイトでは、基本的な機能の提供のためにCookieを使用する場合があります。Cookieはブラウザの設定で無効にすることができますが、一部の機能が正常に動作しなくなる可能性があります。</p>
-      </div>
+      <h2>6. データの削除</h2>
+      <p>お客さまは、いつでもご自身のデータの削除を請求できます。</p>
+      <ul>
+        <li><strong>会話データ</strong>: アプリの削除により端末から消去されます</li>
+        <li><strong>アカウント・サーバーデータ</strong>: <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からご連絡いただければ、アカウントおよびサーバーに保存された全データを完全に削除いたします</li>
+      </ul>
 
-      <div class="legal-section">
-        <h2>9. プライバシーポリシーの変更</h2>
-        <p>本ポリシーは、法令の改正やサービス内容の変更に伴い、事前の通知なく改定することがあります。重要な変更がある場合は、アプリ内またはWebサイト上でお知らせします。</p>
-      </div>
+      <h2>7. お子さまの情報の取り扱い</h2>
+      <p>本サービスはお子さまの情報（ニックネーム・生年月日）をお預かりしますが、これはモモルがお子さまの月齢に合わせた適切な応答を行うためにのみ使用します。お子さまの情報を広告やマーケティングに利用することはありません。</p>
 
-      <div class="legal-section">
-        <h2>10. お問い合わせ</h2>
-        <p>プライバシーに関するご質問・ご要望は、<a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からお気軽にお問い合わせください。</p>
-      </div>
+      <h2>8. Cookieについて</h2>
+      <p>本Webサイトでは、基本的な機能の提供のためにCookieを使用する場合があります。Cookieはブラウザの設定で無効にすることができますが、一部の機能が正常に動作しなくなる可能性があります。</p>
+
+      <h2>9. プライバシーポリシーの変更</h2>
+      <p>本ポリシーは、法令の改正やサービス内容の変更に伴い、事前の通知なく改定することがあります。重要な変更がある場合は、アプリ内またはWebサイト上でお知らせします。</p>
+
+      <h2>10. お問い合わせ</h2>
+      <p>プライバシーに関するご質問・ご要望は、<a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">LINE公式アカウント</a>からお気軽にお問い合わせください。</p>
+
     </div>
   </div>
 
@@ -158,7 +147,7 @@
         <div class="footer-brand">
           <img src="images/icon.png" alt="モモル" class="footer-logo">
           <span class="footer-brand-name">モモル</span>
-          <p class="footer-brand-desc">AI育児コンシェルジュ</p>
+          <p class="footer-brand-desc">ママに寄り添う AI コンシェルジュ</p>
         </div>
         <div class="footer-links">
           <a href="index.html">トップ</a>

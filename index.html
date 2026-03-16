@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>モモル - ひとりで抱えなくて、いいんだよ。</title>
-  <meta name="description" content="愚痴も、不安も、嬉しかったことも。モモルがぜんぶ受け止めて、パパにもそっと届けるよ。AI育児コンシェルジュ。テストユーザー募集中。">
-  <meta property="og:title" content="モモル - ひとりで抱えなくて、いいんだよ。">
-  <meta property="og:description" content="愚痴も、不安も、嬉しかったことも。モモルがぜんぶ受け止めて、パパにもそっと届けるよ。テストユーザー募集中。">
+  <title>モモル - 話すだけで、育児がすこし軽くなる。</title>
+  <meta name="description" content="妊娠中〜1歳のお子さんがいるママへ。AIが話を聴いて、パパにそっと届けるアプリ。テストユーザー募集中・完全無料。">
+  <meta property="og:title" content="モモル - 話すだけで、育児がすこし軽くなる。">
+  <meta property="og:description" content="妊娠中〜1歳のお子さんがいるママへ。AIが話を聴いて、パパにそっと届けるアプリ。テストユーザー募集中・完全無料。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/icon.png">
+  <meta property="og:image" content="images/momo_talk.png">
   <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- ナビバー -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
@@ -24,356 +25,245 @@
         <span class="nav-logo-text">モモル</span>
       </a>
       <div class="nav-links">
-        <a href="#about" class="nav-link">モモルって？</a>
-        <a href="#features" class="nav-link">特徴</a>
+        <a href="#features" class="nav-link">できること</a>
         <a href="#how-it-works" class="nav-link">使い方</a>
         <a href="#faq" class="nav-link">FAQ</a>
-        <a href="guide.html" class="nav-link">はじめかた</a>
       </div>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">テスト参加する</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">
+        テスト参加する
+      </a>
       <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <!-- モバイルメニュー -->
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#about" class="mobile-link">モモルって？</a>
-      <a href="#features" class="mobile-link">特徴</a>
+      <a href="#features" class="mobile-link">できること</a>
       <a href="#how-it-works" class="mobile-link">使い方</a>
       <a href="#faq" class="mobile-link">FAQ</a>
-      <a href="guide.html" class="mobile-link">はじめかた</a>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">テスト参加する</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">
+        テスト参加する
+      </a>
     </div>
   </nav>
 
-  <!-- セクション1: ヒーロー -->
+  <!-- ヒーロー（絵本風） -->
   <section class="hero" id="hero">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+    <!-- 絵本風背景装飾 -->
+    <div class="hero-deco" aria-hidden="true">
+      <div class="deco-cloud deco-cloud-1"></div>
+      <div class="deco-cloud deco-cloud-2"></div>
+      <div class="deco-cloud deco-cloud-3"></div>
+      <div class="deco-cloud deco-cloud-4"></div>
+      <div class="deco-star deco-star-1">★</div>
+      <div class="deco-star deco-star-2">★</div>
+      <div class="deco-star deco-star-3">★</div>
+      <div class="deco-star deco-star-4">★</div>
+      <div class="deco-star deco-star-5">★</div>
+      <div class="deco-star deco-star-6">★</div>
     </div>
+
     <div class="hero-inner">
-      <div class="hero-content">
-        <p class="hero-label">AI育児コンシェルジュ</p>
-        <div class="hero-test-badge">🍑 テストユーザー募集中 · 完全無料</div>
-        <h1 class="hero-title">
-          <span class="hero-title-accent">ひとりで抱えなくて、<br>いいんだよ。</span>
-        </h1>
-        <p class="hero-subtitle">
-          愚痴も、不安も、嬉しかったことも。<br>
-          モモルがぜんぶ受け止めて、パパにもそっと届けるよ。
-        </p>
-        <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="hero-cta">LINEでテスト参加する</a>
-        <p class="hero-cta-note">LINEを友達追加 → TestFlightリンクをお届け</p>
+      <div class="hero-test-badge">🍑 テストユーザー募集中 · 完全無料</div>
+      <p class="hero-label">ママに寄り添う AI コンシェルジュ</p>
+      <h1 class="hero-title">『モモル』</h1>
+
+      <div class="hero-momo">
+        <img src="images/momo_talk.png" alt="モモル" class="hero-momo-img">
       </div>
-      <div class="hero-visual">
-        <div class="phone-mockups">
-          <!-- ママ画面モック -->
-          <div class="phone-frame phone-mama">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mock-header">
-                <span class="mock-time">9:41</span>
-              </div>
-              <div class="mock-chat-screen">
-                <div class="mock-chat-title">おはなし</div>
-                <div class="mock-chat-subtitle">モモルとおしゃべりしよう</div>
-                <div class="mock-messages">
-                  <div class="mock-msg mock-msg-user">今日は離乳食あまり食べなかったな…</div>
-                  <div class="mock-msg mock-msg-ai">
-                    <img src="images/momoru-avatar.png" alt="" class="mock-avatar">
-                    <div class="mock-msg-bubble">そっか、食べてくれない日もあるよね。でもちゃんと気にかけてるママ、えらいよ</div>
-                  </div>
-                  <div class="mock-msg mock-msg-user">お昼寝も30分で起きちゃった</div>
-                  <div class="mock-msg mock-msg-ai">
-                    <img src="images/momoru-avatar.png" alt="" class="mock-avatar">
-                    <div class="mock-msg-bubble">短いお昼寝だったんだね。ママも休めなかったかな？</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="phone-label">ママの画面</div>
-          </div>
-          <!-- モモルキャラ -->
-          <div class="hero-momoru">
-            <img src="images/momoru-smile.png" alt="モモル" class="hero-momoru-img">
-          </div>
-          <!-- パパ画面モック -->
-          <div class="phone-frame phone-papa">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mock-header">
-                <span class="mock-time">9:41</span>
-              </div>
-              <div class="mock-share-screen">
-                <div class="mock-chat-title">きょうの共有</div>
-                <div class="mock-share-card">
-                  <div class="mock-share-date">2月20日（木）</div>
-                  <div class="mock-share-body">
-                    今日は離乳食をあまり食べなかったみたい。お昼寝も短めで、ママはちょっとお疲れ気味かも。
-                  </div>
-                  <div class="mock-stamps">
-                    <div class="mock-stamp mock-stamp-active">
-                      <span class="mock-stamp-icon">&#9829;</span>
-                      <span class="mock-stamp-label">おつかれさま</span>
-                    </div>
-                    <div class="mock-stamp">
-                      <span class="mock-stamp-icon">&#9758;</span>
-                      <span class="mock-stamp-label">無理しないで</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="phone-label">パパの画面</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>scroll</span>
-      <div class="scroll-arrow"></div>
+
+      <p class="hero-catch">話すだけで、育児がすこし軽くなる。</p>
+      <p class="hero-target">妊娠中〜1歳のお子さんがいるママへ</p>
+
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="hero-cta">
+        LINEでテスト参加する
+      </a>
+      <p class="hero-cta-note">友達追加 → TestFlightリンクをお届け</p>
     </div>
   </section>
 
-  <!-- テスト参加バナー -->
-  <section class="test-banner">
-    <div class="section-inner test-banner-inner">
-      <div class="test-banner-steps">
-        <div class="test-banner-step">
-          <div class="test-banner-step-num">1</div>
-          <div class="test-banner-step-text">LINEを<br>友達追加</div>
-        </div>
-        <div class="test-banner-arrow">→</div>
-        <div class="test-banner-step">
-          <div class="test-banner-step-num">2</div>
-          <div class="test-banner-step-text">TestFlightを<br>インストール</div>
-        </div>
-        <div class="test-banner-arrow">→</div>
-        <div class="test-banner-step">
-          <div class="test-banner-step-num">3</div>
-          <div class="test-banner-step-text">モモルを<br>インストール</div>
-        </div>
-        <div class="test-banner-arrow">→</div>
-        <div class="test-banner-step">
-          <div class="test-banner-step-num">4</div>
-          <div class="test-banner-step-text">使ってみる<br>（完全無料）</div>
-        </div>
-      </div>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="test-banner-btn">LINEでテスト参加する →</a>
-    </div>
-  </section>
-
-  <!-- セクション2: モモルって？ -->
+  <!-- モモルって？ -->
   <section class="about" id="about">
     <div class="section-inner">
-      <h2 class="section-title section-title-center">モモルって？</h2>
       <div class="about-grid">
         <div class="about-visual">
-          <div class="about-expressions">
-            <img src="images/momoru-smile.png" alt="笑顔のモモル" class="expr-img expr-main">
-            <img src="images/momoru-empathy.png" alt="共感のモモル" class="expr-img expr-sub expr-1">
-            <img src="images/momoru-cheer.png" alt="応援のモモル" class="expr-img expr-sub expr-2">
-            <img src="images/momoru-thinking.png" alt="考え中のモモル" class="expr-img expr-sub expr-3">
-          </div>
+          <img src="images/momo_cry.png" alt="モモル" class="about-img">
         </div>
-        <div class="about-content">
-          <p class="about-text" style="font-size: 17px; font-weight: 500; color: var(--text-primary);">
-            いつでもそばにいて、気持ちを受け止めてくれる存在。
+        <div class="about-text-block">
+          <p class="section-label">モモルって？</p>
+          <h2 class="about-title">育児の「しんどい」を<br>ひとりで抱えなくていい</h2>
+          <p class="about-desc">
+            赤ちゃんのお世話で疲れた夜、不安な気持ち、嬉しかったこと。<br>
+            モモルに話しかけるだけで、AIが優しく受け止めてくれます。<br>
+            そしてパパにも、ちゃんと届けてくれます。
           </p>
-          <p class="about-text">
-            深夜の授乳中、ちょっと愚痴りたいとき、誰かに「がんばってるね」って言ってほしいとき。モモルはいつでも話を聞いて、あなたの気持ちに寄り添うよ。
-          </p>
-          <p class="about-text">
-            しかも、話すだけで育児の記録が残って、パパにも今日のことがやさしく届く。「伝えたいけど言葉にできない」も、モモルが橋渡ししてくれるんだ。
-          </p>
-          <p class="about-text about-text-accent">
-            モモルは桃の妖精。ママの気持ちに寄り添って、家族をそっとつないでくれる存在だよ。
-          </p>
+          <div class="about-tags">
+            <span class="about-tag">妊娠中〜1歳</span>
+            <span class="about-tag">iPhoneアプリ</span>
+            <span class="about-tag">テスト期間中は無料</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- セクション3: 特徴 -->
+  <!-- できること（特徴） -->
   <section class="features" id="features">
     <div class="section-inner">
-      <h2 class="section-title section-title-center">モモルの特徴</h2>
+      <p class="section-label section-label-center">できること</p>
+      <h2 class="section-title section-title-center">モモルと一緒にできる<br>4つのこと</h2>
       <div class="features-grid">
-        <!-- 特徴1: こころのケア -->
+
         <div class="feature-card" data-animate>
-          <div class="feature-num">1</div>
-          <h3 class="feature-title">いつでも気持ちを受け止める</h3>
-          <p class="feature-pain">深夜の授乳中、誰かに話を聞いてほしい。でも専門家には感情的な話はしにくいし、ChatGPTじゃ味気ない…</p>
+          <div class="feature-img-wrap">
+            <img src="images/momo_listen.png" alt="話を聴く" class="feature-img">
+          </div>
+          <h3 class="feature-title">気持ちを話すだけで<br>育児記録になる</h3>
           <p class="feature-desc">
-            モモルは愚痴も不安もぜんぶ受け止めるよ。あなたの話をちゃんと覚えていて、「かけてほしい言葉」を届けてくれるんだ。
+            「今日もしんどかった」「はじめて笑った！」<br>
+            話しかけるだけで、モモルが記録してくれます。日記をつける余裕がなくても大丈夫。
           </p>
         </div>
-        <!-- 特徴2: パートナー共有 -->
+
         <div class="feature-card" data-animate>
-          <div class="feature-num">2</div>
-          <h3 class="feature-title">言わなくても、パパに届く</h3>
-          <p class="feature-pain">パパに大変さを伝えたいけど、うまく言葉にできない。言うとケンカになりそう…</p>
+          <div class="feature-img-wrap">
+            <img src="images/momo_share.png" alt="パパに届ける" class="feature-img">
+          </div>
+          <h3 class="feature-title">パパに今日の様子を<br>そっと届ける</h3>
           <p class="feature-desc">
-            モモルが毎日の会話をやさしくまとめて、パパに共有カードとして届けるよ。パパはスタンプで「おつかれさま」と気持ちを返せるんだ。
+            直接言いにくいことも、モモルがうまくまとめてパパに届けます。パパはスタンプで気持ちを返せます。
           </p>
         </div>
-        <!-- 特徴3: 育児相談 -->
+
         <div class="feature-card" data-animate>
-          <div class="feature-num">3</div>
-          <h3 class="feature-title">あなたの子に合わせた、安心を</h3>
-          <p class="feature-pain">「この月齢でこれって普通？」調べても子どもによって違うから不安…</p>
+          <div class="feature-img-wrap">
+            <img src="images/momo_reading.png" alt="しらべる" class="feature-img">
+          </div>
+          <h3 class="feature-title">育児の疑問を<br>すぐ調べてくれる</h3>
           <p class="feature-desc">
-            モモルはお子さまの記録をもとに、「あなたの子ども」に合わせて答えるよ。発達・睡眠・食事の目安もやさしく教えてくれるんだ。
+            「離乳食いつから？」「夜泣きはいつまで？」<br>
+            育児の疑問をモモルに聞けば、わかりやすく教えてくれます。
           </p>
         </div>
-        <!-- 特徴4: 育児記録 -->
+
         <div class="feature-card" data-animate>
-          <div class="feature-num">4</div>
-          <h3 class="feature-title">話すだけで、記録になる</h3>
-          <p class="feature-pain">育児記録、つけたいけど毎日入力する余裕がない…</p>
+          <div class="feature-img-wrap">
+            <img src="images/momo_report.png" alt="レポート" class="feature-img">
+          </div>
+          <h3 class="feature-title">月ごとの振り返りを<br>レポートにまとめる</h3>
           <p class="feature-desc">
-            モモルに話すだけでOK。授乳、睡眠、離乳食…会話から自動で記録してくれるよ。
+            1ヶ月の育児の記録を、モモルが自動でレポートにまとめます。成長の記録として残せます。
           </p>
         </div>
-        <!-- 特徴5: パパ専用機能 -->
-        <div class="feature-card" data-animate>
-          <div class="feature-num">5</div>
-          <h3 class="feature-title">パパも、一緒に育児できる</h3>
-          <p class="feature-pain">仕事で忙しくて、ママの大変さを把握できていない。何をすればいいかわからない…</p>
-          <p class="feature-desc">
-            パパ専用の画面で、ママの今日を受け取れるよ。モモルに育児の相談もできるから、パパも自信を持って関われるんだ。
-          </p>
-        </div>
-        <!-- 特徴6: 声かけ -->
-        <div class="feature-card" data-animate>
-          <div class="feature-num">6</div>
-          <h3 class="feature-title">モモルから、そっと声をかけてくれる</h3>
-          <p class="feature-pain">育児に追われて、自分のことを忘れてしまう。誰かに気にかけてほしい…</p>
-          <p class="feature-desc">
-            誕生日、月齢の節目、季節のイベント…モモルが家族のことを覚えていて、タイミングよく声をかけてくれるよ。
-          </p>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- セクション4: モモルのいる1日 -->
+  <!-- 使い方（3ステップ） -->
   <section class="how-it-works" id="how-it-works">
     <div class="section-inner">
-      <h2 class="section-title section-title-center">モモルのいる1日</h2>
-      <div class="timeline">
-        <!-- 朝 -->
-        <div class="timeline-item" data-animate>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-time">朝</div>
-            <p class="timeline-scene">「昨日は夜泣き2回で全然寝れなかった…」</p>
-            <div class="timeline-action">
-              「大変だったね、おつかれさま。」と気持ちを受け止める。睡眠記録も自動で残るよ。
+      <p class="section-label section-label-center">使い方</p>
+      <h2 class="section-title section-title-center">3ステップではじめられる</h2>
+      <div class="steps-wrap">
+        <div class="steps-grid">
+
+          <div class="step-card" data-animate>
+            <div class="step-num">1</div>
+            <div class="step-img-wrap">
+              <img src="images/momo_explain.png" alt="ステップ1" class="step-img">
             </div>
+            <h3 class="step-title">LINEで友達追加</h3>
+            <p class="step-desc">LINEのボタンをタップして友達追加。TestFlightのリンクが届きます。</p>
           </div>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <div class="step-card" data-animate>
+            <div class="step-num">2</div>
+            <div class="step-img-wrap">
+              <img src="images/momo_talk.png" alt="ステップ2" class="step-img">
+            </div>
+            <h3 class="step-title">アプリをインストール</h3>
+            <p class="step-desc">TestFlightからモモルをインストール。iPhoneがあればすぐ使えます。</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <div class="step-card" data-animate>
+            <div class="step-num">3</div>
+            <div class="step-img-wrap">
+              <img src="images/momo_heart.png" alt="ステップ3" class="step-img">
+            </div>
+            <h3 class="step-title">モモルに話しかける</h3>
+            <p class="step-desc">今日の気持ちをモモルに話しかけてみてください。ゆっくり聴いてくれます。</p>
+          </div>
+
         </div>
-        <!-- 昼 -->
-        <div class="timeline-item" data-animate>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-time">昼</div>
-            <p class="timeline-scene">「離乳食、にんじん初めて食べたよ！この月齢で固形って早い？」</p>
-            <div class="timeline-action">
-              一緒に喜んで、お子さまの記録をもとに「大丈夫、順調だよ」と安心を届ける。
-            </div>
-          </div>
-        </div>
-        <!-- モモルからの声かけ -->
-        <div class="timeline-item" data-animate>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-time">午後 — モモルから声かけ</div>
-            <p class="timeline-scene">「もうすぐ生後3ヶ月だね。最近どう？」</p>
-            <div class="timeline-action">
-              月齢の節目を覚えていて、モモルからそっと話しかけてくれるよ。
-            </div>
-          </div>
-        </div>
-        <!-- 夕方 -->
-        <div class="timeline-item" data-animate>
-          <div class="timeline-dot timeline-dot-papa"></div>
-          <div class="timeline-content">
-            <div class="timeline-time timeline-time-papa">夕方 — パパのスマホに届く</div>
-            <p class="timeline-scene">今日のまとめが共有カードとしてパパに届く。</p>
-            <div class="timeline-action timeline-action-papa">
-              パパは「おつかれさま」スタンプをタップ。ママに気持ちがそっと届く。
-            </div>
-          </div>
-        </div>
-        <!-- 夜 -->
-        <div class="timeline-item" data-animate>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-time">夜</div>
-            <p class="timeline-scene">「寝かしつけ終わった…今日もがんばった」</p>
-            <div class="timeline-action">
-              「今日もおつかれさま。ゆっくり休んでね。」とモモルが声をかけてくれるよ。
-            </div>
-          </div>
+        <div class="steps-cta">
+          <a href="guide.html" class="steps-guide-link">くわしいはじめかたを見る →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- セクション5: テスターの声 -->
+  <!-- テスターの声 -->
   <section class="testimonials" id="testimonials">
     <div class="section-inner">
+      <p class="section-label section-label-center">テスターの声</p>
       <h2 class="section-title section-title-center">使ってくれたママ・パパの声</h2>
       <div class="testimonials-grid">
+
         <div class="testimonial-card" data-animate>
-          <div class="testimonial-quote">"</div>
+          <div class="testimonial-momo-wrap">
+            <img src="images/momo_face.png" alt="" class="testimonial-momo-img">
+          </div>
           <p class="testimonial-text">
-            モモルに話すだけで育児記録がつくのが本当にラク。日記をつける余裕がなかったけど、これなら続けられそう。
+            「モモルに話すだけで育児記録がつくのが本当にラク。日記をつける余裕がなかったけど、これなら続けられそう。」
           </p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar mama-avatar"></div>
-            <div>
-              <span class="testimonial-name">ママ（生後6ヶ月）</span>
-            </div>
+            <span class="testimonial-role mama-role">ママ</span>
+            <span class="testimonial-name">（生後6ヶ月）</span>
           </div>
         </div>
+
         <div class="testimonial-card" data-animate>
-          <div class="testimonial-quote">"</div>
+          <div class="testimonial-momo-wrap">
+            <img src="images/momo_face.png" alt="" class="testimonial-momo-img">
+          </div>
           <p class="testimonial-text">
-            共有カードのおかげで、仕事中でもママの大変さがわかるようになった。スタンプで気持ちを返せるのもいい。
+            「共有カードのおかげで、仕事中でもママの大変さがわかるようになった。スタンプで気持ちを返せるのもいい。」
           </p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar papa-avatar"></div>
-            <div>
-              <span class="testimonial-name">パパ（生後6ヶ月）</span>
-            </div>
+            <span class="testimonial-role papa-role">パパ</span>
+            <span class="testimonial-name">（生後6ヶ月）</span>
           </div>
         </div>
+
         <div class="testimonial-card" data-animate>
-          <div class="testimonial-quote">"</div>
+          <div class="testimonial-momo-wrap">
+            <img src="images/momo_face.png" alt="" class="testimonial-momo-img">
+          </div>
           <p class="testimonial-text">
-            「言わなくても伝わる」のがすごい。パパに直接言いにくいことも、モモルが上手にまとめて届けてくれる。
+            「言わなくても伝わるのがすごい。パパに直接言いにくいことも、モモルが上手にまとめて届けてくれる。」
           </p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar mama-avatar"></div>
-            <div>
-              <span class="testimonial-name">ママ（妊娠8ヶ月）</span>
-            </div>
+            <span class="testimonial-role mama-role">ママ</span>
+            <span class="testimonial-name">（妊娠8ヶ月）</span>
           </div>
         </div>
+
       </div>
       <p class="testimonials-note">※ テスト期間中のフィードバックより</p>
     </div>
   </section>
 
-  <!-- セクション6: FAQ（簡易版） -->
+  <!-- FAQ -->
   <section class="faq" id="faq">
     <div class="section-inner">
-      <h2 class="section-title section-title-center">よくある質問</h2>
+      <p class="section-label section-label-center">よくある質問</p>
+      <h2 class="section-title section-title-center">FAQ</h2>
       <div class="faq-list">
+
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>テスト期間中は無料ですか？</span>
@@ -383,15 +273,17 @@
             <p>はい、テスト期間中はすべての機能を完全無料でご利用いただけます。テスト終了後に有料プランへの移行をご案内する予定ですが、強制ではありません。</p>
           </div>
         </div>
+
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>誰が参加できますか？</span>
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
-            <p>妊娠中〜乳幼児を育てているママ・パパであればどなたでも参加できます。ママが先にインストールして、パパを招待する形が一般的です。</p>
+            <p>妊娠中〜1歳のお子さんがいるママ・パパであればどなたでも参加できます。ママが先にインストールして、パパを招待する形が一般的です。</p>
           </div>
         </div>
+
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>どんな端末で使えますか？</span>
@@ -401,6 +293,7 @@
             <p>現在はiOS端末（iPhone）でご利用いただけます。TestFlightからインストールしていただきます。Android版は今後対応予定です。</p>
           </div>
         </div>
+
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>会話の内容は安全に管理されますか？</span>
@@ -410,6 +303,7 @@
             <p>会話データは暗号化してサーバーに保存されます。運営チームがモモルとの会話の中身を読むことはありません。詳しくは<a href="privacy.html" style="color: var(--primary); font-weight: 600;">プライバシーポリシー</a>をご確認ください。</p>
           </div>
         </div>
+
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>パパもアプリをインストールする必要がありますか？</span>
@@ -419,41 +313,36 @@
             <p>はい。パパにもアプリをインストールしていただき、ママからの招待QRコードで連携していただきます。共有カードの確認やスタンプの送信はパパ専用の画面で行えます。</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>AIが変なことを教えたりしませんか？</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>育児の専門知識をもとに設計されており、セーフティフィルターも搭載しています。ただし、AIの回答は参考情報です。お子さまの健康に関する判断は、必ず医療の専門家にご相談ください。</p>
-          </div>
-        </div>
+
       </div>
       <div class="faq-more">
-        <a href="faq.html" class="faq-more-link">もっと見る &rarr;</a>
+        <a href="faq.html" class="faq-more-link">もっと見る →</a>
       </div>
     </div>
   </section>
 
-  <!-- セクション7: CTA -->
+  <!-- 最終CTA -->
   <section class="cta" id="cta">
-    <div class="cta-bg-shapes">
-      <div class="cta-shape cta-shape-1"></div>
-      <div class="cta-shape cta-shape-2"></div>
+    <div class="cta-deco" aria-hidden="true">
+      <div class="deco-cloud deco-cloud-cta1"></div>
+      <div class="deco-cloud deco-cloud-cta2"></div>
+      <div class="deco-star deco-star-cta1">★</div>
+      <div class="deco-star deco-star-cta2">★</div>
+      <div class="deco-star deco-star-cta3">★</div>
     </div>
     <div class="section-inner cta-inner">
-      <img src="images/momoru-cheer.png" alt="応援するモモル" class="cta-momoru">
-      <h2 class="cta-title">モモルが、<br>あなたのそばにいるよ</h2>
-      <p class="cta-subtitle">テスト期間中は完全無料で使えるよ</p>
-      <div class="cta-details">
+      <img src="images/momo_heart.png" alt="モモル" class="cta-momo">
+      <h2 class="cta-title">モモルが、<br>そばにいるよ</h2>
+      <p class="cta-sub">テスト期間中は完全無料で使えます</p>
+      <div class="cta-badges">
         <span class="cta-badge">完全無料</span>
         <span class="cta-badge">iPhone対応</span>
-        <span class="cta-badge">かんたん3分</span>
+        <span class="cta-badge">妊娠中〜1歳</span>
       </div>
-      <div class="cta-form-wrapper">
-        <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="cta-btn">LINEでテスト参加する</a>
-        <p class="cta-form-note">LINEを友達追加 → TestFlightリンクをお届け</p>
-      </div>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="cta-btn">
+        LINEでテスト参加する
+      </a>
+      <p class="cta-note">友達追加 → TestFlightリンクをお届け</p>
     </div>
   </section>
 
@@ -464,11 +353,10 @@
         <div class="footer-brand">
           <img src="images/icon.png" alt="モモル" class="footer-logo">
           <span class="footer-brand-name">モモル</span>
-          <p class="footer-brand-desc">AI育児コンシェルジュ</p>
+          <p class="footer-brand-desc">ママに寄り添う AI コンシェルジュ</p>
         </div>
         <div class="footer-links">
-          <a href="#about">モモルって？</a>
-          <a href="#features">特徴</a>
+          <a href="#features">できること</a>
           <a href="#how-it-works">使い方</a>
           <a href="#faq">FAQ</a>
           <a href="guide.html">はじめかたガイド</a>

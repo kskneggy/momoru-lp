@@ -917,7 +917,7 @@ a { text-decoration: none; color: inherit; }
 
 .subpage-hero {
   background: var(--bg-elevated);
-  padding: var(--space-2xl) var(--page-margin) var(--space-xl); /* 48px 20px 32px */
+  padding: calc(60px + var(--space-2xl)) var(--page-margin) var(--space-xl); /* navbar(60px) + 48px top, 20px sides, 32px bottom */
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
@@ -1382,17 +1382,16 @@ a { text-decoration: none; color: inherit; }
 .phone-tab.active .phone-tab-icon { color: var(--primary); }
 .phone-tab.active .phone-tab-label { color: var(--primary); font-weight: 700; }
 
-/* モモルサイドキャラ */
+/* モモルサイドキャラ（スマホ右下オーバーレイ） */
 .hero-momo-side {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  margin-left: -20px;
-  margin-bottom: var(--space-lg); /* 24px */
-  align-self: flex-end;
+  right: -40px;
+  bottom: -10px;
 }
 
 .hero-momo-side-img {
-  width: 160px;
+  width: 120px;
   height: auto;
   filter: drop-shadow(0 8px 20px rgba(245,165,165,0.35));
   animation: float 4s ease-in-out infinite;
@@ -1402,5 +1401,6 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 480px) {
   .phone-frame { width: 200px; }
   .phone-screen { min-height: 360px; }
-  .hero-momo-side-img { width: 120px; }
+  .hero-momo-side-img { width: 90px; }
+  .hero-momo-side { right: -30px; bottom: -8px; }
 }

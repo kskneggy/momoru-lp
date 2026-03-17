@@ -1166,6 +1166,21 @@ a { text-decoration: none; color: inherit; }
   z-index: 10;
 }
 
+/* スクリーンショット版フレーム */
+.phone-frame-screenshot {
+  border-radius: 32px;
+}
+
+.phone-frame-screenshot::before {
+  display: none;
+}
+
+.phone-screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .phone-screen {
   background: #FDF6F0;
   display: flex;

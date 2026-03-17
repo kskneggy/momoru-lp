@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ナビバー -->
+  <!-- ナビバー（TOPと共通） -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
@@ -20,144 +20,117 @@
         <span class="nav-logo-text">モモル</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#about" class="nav-link">モモルって？</a>
-        <a href="index.html#features" class="nav-link">特徴</a>
+        <a href="index.html#features" class="nav-link">できること</a>
         <a href="index.html#how-it-works" class="nav-link">使い方</a>
         <a href="index.html#faq" class="nav-link">FAQ</a>
-        <a href="guide.html" class="nav-link">はじめかた</a>
       </div>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">テスト参加する</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="nav-cta-btn">
+        テスト参加する
+      </a>
       <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html#about" class="mobile-link">モモルって？</a>
-      <a href="index.html#features" class="mobile-link">特徴</a>
+      <a href="index.html#features" class="mobile-link">できること</a>
       <a href="index.html#how-it-works" class="mobile-link">使い方</a>
       <a href="index.html#faq" class="mobile-link">FAQ</a>
-      <a href="guide.html" class="mobile-link">はじめかた</a>
-      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">テスト参加する</a>
+      <a href="guide.html" class="mobile-link">はじめかたガイド</a>
+      <a href="faq.html" class="mobile-link">よくある質問</a>
+      <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="mobile-cta-btn">
+        テスト参加する
+      </a>
     </div>
   </nav>
 
-  <div class="guide-page">
-    <div class="guide-inner">
-      <h1 class="guide-title">はじめかたガイド</h1>
-      <p class="guide-subtitle">iPhoneでモモルを使い始めるまでの手順をご案内します。<br>所要時間はおよそ3分です。テスト期間中は完全無料です。</p>
+  <!-- サブページヒーロー -->
+  <section class="subpage-hero">
+    <div class="section-inner">
+      <h1 class="subpage-title">はじめかたガイド</h1>
+      <p class="subpage-subtitle">iPhoneでモモルを使い始めるまでの手順をご案内します。<br>所要時間はおよそ3分です。テスト期間中は完全無料です。</p>
+    </div>
+  </section>
+
+  <!-- ガイド本文 -->
+  <section class="subpage-body">
+    <div class="section-inner">
 
       <!-- ステップ1: LINE友達追加 -->
-      <div class="guide-step" id="step1">
-        <div class="guide-step-header">
-          <div class="guide-step-num">1</div>
-          <h2 class="guide-step-title">LINEを友達追加する</h2>
+      <div class="guide-step">
+        <div class="guide-step-num">1</div>
+        <h3>LINEを友達追加する</h3>
+        <p>以下のLINE公式アカウントを友達追加してください。TestFlightの招待リンクを自動でお届けします。</p>
+        <div class="guide-step-cta">
+          <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" class="cta-btn">LINEでテスト参加する</a>
         </div>
-        <div class="guide-step-body">
-          <p>以下のLINE公式アカウントを友達追加してください。TestFlightの招待リンクを自動でお届けします。</p>
-          <p style="margin-top: 12px;">
-            <a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener" style="display: inline-block; padding: 12px 24px; background: #06C755; color: white; border-radius: 10px; font-weight: 700; font-size: 15px;">LINEでテスト参加する</a>
-          </p>
-          <p style="margin-top: 8px; font-size: 13px; color: var(--text-disabled);">※ 友達追加後、自動返信でTestFlightのリンクをお届けします。</p>
-        </div>
+        <p class="guide-step-note">※ 友達追加後、自動返信でTestFlightのリンクをお届けします。</p>
       </div>
 
       <!-- ステップ2: TestFlightインストール -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">2</div>
-          <h2 class="guide-step-title">TestFlightをインストール</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>モモルは現在テスト版として公開しています。Apple公式の「<strong>TestFlight</strong>」アプリをiPhoneにインストールしてください。</p>
-          <p style="margin-top: 12px;">
-            <a href="https://apps.apple.com/jp/app/testflight/id899247664" target="_blank" rel="noopener">App StoreでTestFlightをダウンロード &rarr;</a>
-          </p>
-          <p style="margin-top: 8px; font-size: 13px; color: var(--text-disabled);">※ TestFlightはApple公式の無料アプリです。すでにインストール済みの方はスキップしてください。</p>
-        </div>
+        <div class="guide-step-num">2</div>
+        <h3>TestFlightをインストール</h3>
+        <p>モモルは現在テスト版として公開しています。Apple公式の「<strong>TestFlight</strong>」アプリをiPhoneにインストールしてください。</p>
+        <p class="guide-step-link"><a href="https://apps.apple.com/jp/app/testflight/id899247664" target="_blank" rel="noopener">App StoreでTestFlightをダウンロード →</a></p>
+        <p class="guide-step-note">※ TestFlightはApple公式の無料アプリです。すでにインストール済みの方はスキップしてください。</p>
       </div>
 
       <!-- ステップ3: 招待リンクを開く -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">3</div>
-          <h2 class="guide-step-title">招待リンクからモモルを追加</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>LINEで届いた招待リンクをiPhoneのSafariで開いてください。TestFlightが起動し、モモルが追加されます。</p>
-          <p style="margin-top: 12px; font-size: 13px; color: var(--text-disabled);">※ 「テストを開始」ボタンが表示されたらタップしてください。</p>
-        </div>
+        <div class="guide-step-num">3</div>
+        <h3>招待リンクからモモルを追加</h3>
+        <p>LINEで届いた招待リンクをiPhoneのSafariで開いてください。TestFlightが起動し、モモルが追加されます。</p>
+        <p class="guide-step-note">※ 「テストを開始」ボタンが表示されたらタップしてください。</p>
       </div>
 
       <!-- ステップ4: アプリをインストール -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">4</div>
-          <h2 class="guide-step-title">モモルをインストール</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>TestFlightアプリ内に「モモル」が表示されたら、「<strong>インストール</strong>」ボタンをタップしてください。ホーム画面にモモルのアイコンが追加されます。</p>
-          <p style="margin-top: 8px; font-size: 13px; color: var(--text-disabled);">※ インストールには数十秒かかる場合があります。</p>
-        </div>
+        <div class="guide-step-num">4</div>
+        <h3>モモルをインストール</h3>
+        <p>TestFlightアプリ内に「モモル」が表示されたら、「<strong>インストール</strong>」ボタンをタップしてください。ホーム画面にモモルのアイコンが追加されます。</p>
+        <p class="guide-step-note">※ インストールには数十秒かかる場合があります。</p>
       </div>
 
       <!-- ステップ5: アプリを開いてログイン -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">5</div>
-          <h2 class="guide-step-title">アプリを開いてログイン</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>ホーム画面からモモルを開き、「<strong>ログイン</strong>」ボタンをタップしてください。Googleアカウントまたはメールアドレスでログインできます。</p>
-        </div>
+        <div class="guide-step-num">5</div>
+        <h3>アプリを開いてログイン</h3>
+        <p>ホーム画面からモモルを開き、「<strong>ログイン</strong>」ボタンをタップしてください。Googleアカウントまたはメールアドレスでログインできます。</p>
       </div>
 
       <!-- ステップ6: プロフィール設定 -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">6</div>
-          <h2 class="guide-step-title">プロフィールを設定</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>ログイン後、ニックネームとお子さまの情報（名前・生年月日）を設定します。モモルがお子さまに合わせた会話をするために使います。</p>
-          <p style="margin-top: 8px; font-size: 13px; color: var(--text-disabled);">※ あとから「マイページ」でいつでも変更できます。</p>
-        </div>
+        <div class="guide-step-num">6</div>
+        <h3>プロフィールを設定</h3>
+        <p>ログイン後、ニックネームとお子さまの情報（名前・生年月日）を設定します。モモルがお子さまに合わせた会話をするために使います。</p>
+        <p class="guide-step-note">※ あとから「マイページ」でいつでも変更できます。</p>
       </div>
 
       <!-- ステップ7: モモルに話しかける -->
       <div class="guide-step">
-        <div class="guide-step-header">
-          <div class="guide-step-num">7</div>
-          <h2 class="guide-step-title">モモルに話しかけてみよう</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>「おはなし」タブからモモルに話しかけてみてください。今日あったこと、ちょっとした愚痴、育児の相談、なんでもOKです。</p>
-          <p style="margin-top: 8px;">テスト期間中は<strong>全機能を完全無料</strong>でご利用いただけます。気軽に使ってみてくださいね。</p>
-        </div>
+        <div class="guide-step-num">7</div>
+        <h3>モモルに話しかけてみよう</h3>
+        <p>「おはなし」タブからモモルに話しかけてみてください。今日あったこと、ちょっとした愚痴、育児の相談、なんでもOKです。</p>
+        <p>テスト期間中は<strong>全機能を完全無料</strong>でご利用いただけます。気軽に使ってみてくださいね。</p>
       </div>
 
       <!-- パパ向けセクション -->
-      <div class="guide-papa-section">
-        <div class="guide-step-header">
-          <div class="guide-step-num" style="font-size: 14px;">&#9825;</div>
-          <h2 class="guide-step-title">パパの連携方法</h2>
-        </div>
-        <div class="guide-step-body">
-          <p>パパにもモモルをインストールしてもらい、ログインしてください（ステップ1〜5と同じ手順です）。</p>
-          <p style="margin-top: 8px;">ログイン後、ママの「マイページ」にある<strong>招待QRコード</strong>をパパのスマホで読み取ると、パートナー連携が完了します。</p>
-          <p style="margin-top: 8px;">連携すると、ママの「きょうの共有」カードがパパに届くようになります。パパはスタンプで気持ちを返すことができます。</p>
-        </div>
+      <div class="guide-step guide-step-papa">
+        <div class="guide-step-num" style="background: var(--accent-warm); font-size: 14px;">♡</div>
+        <h3>パパの連携方法</h3>
+        <p>パパにもモモルをインストールしてもらい、ログインしてください（ステップ1〜5と同じ手順です）。</p>
+        <p>ログイン後、ママの「マイページ」にある<strong>招待QRコード</strong>をパパのスマホで読み取ると、パートナー連携が完了します。</p>
+        <p>連携すると、ママの「きょうの共有」カードがパパに届くようになります。パパはスタンプで気持ちを返すことができます。</p>
       </div>
 
       <!-- 困ったとき -->
       <div class="guide-help">
-        <h2 class="guide-help-title">困ったときは</h2>
-        <p class="guide-help-text">
-          アプリ内の「ヘルプ・FAQ」でよくある質問を確認できます。<br>
-          解決しない場合は、<a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener">LINE公式アカウント</a>からお気軽にお問い合わせください。
-        </p>
+        <h3>困ったときは</h3>
+        <p>アプリ内の「ヘルプ・FAQ」でよくある質問を確認できます。解決しない場合は、<a href="https://lin.ee/NxLDeRDX" target="_blank" rel="noopener">LINE公式アカウント</a>からお気軽にお問い合わせください。</p>
       </div>
+
     </div>
-  </div>
+  </section>
 
   <!-- フッター -->
   <footer class="footer">

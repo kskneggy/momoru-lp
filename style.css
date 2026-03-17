@@ -430,7 +430,15 @@ a { text-decoration: none; color: inherit; }
   font-size: var(--text-subhead); /* 15px */
   color: var(--text-sub);
   line-height: 1.8; /* 本文は広めの行間 */
-  margin-bottom: var(--space-lg); /* 24px */
+  margin-bottom: var(--space-xl); /* 32px */
+}
+.about-momo-image {
+  text-align: center;
+}
+.about-momo-img {
+  width: clamp(180px, 28vw, 260px);
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 16px rgba(245,165,165,0.25));
 }
 .about-tags {
   display: flex;

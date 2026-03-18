@@ -276,13 +276,14 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   pointer-events: none;
   user-select: none;
+  opacity: 0.45;
 }
 
-/* 雲 */
-.deco-cloud-tl { top: 6%;  left: 2%;   width: 130px; animation: floatSlow 9s ease-in-out infinite; }
-.deco-cloud-tr { top: 10%; right: 3%;  width: 110px; animation: floatSlow 11s ease-in-out infinite 2s; }
-.deco-cloud-bl { bottom: 18%; left: 4%;  width: 90px;  animation: floatSlow 8s ease-in-out infinite 1s; }
-.deco-cloud-br { bottom: 22%; right: 3%; width: 120px; animation: floatSlow 10s ease-in-out infinite 3s; }
+/* 雲 — 大きめにして端からはみ出させ、自然な奥行き感を出す */
+.deco-cloud-tl { top: 2%;  left: -3%;  width: 180px; animation: floatSlow 12s ease-in-out infinite; }
+.deco-cloud-tr { top: 6%;  right: -4%; width: 160px; animation: floatSlow 14s ease-in-out infinite 3s; }
+.deco-cloud-bl { bottom: 14%; left: -2%; width: 120px; animation: floatSlow 11s ease-in-out infinite 1s; }
+.deco-cloud-br { bottom: 18%; right: -3%; width: 150px; animation: floatSlow 13s ease-in-out infinite 4s; }
 
 /* 星 */
 .deco-star-tl  { top: 14%; left: 10%;  width: 34px; animation: twinkle 3s ease-in-out infinite; }
@@ -292,19 +293,19 @@ a { text-decoration: none; color: inherit; }
 .deco-star-bl  { bottom: 32%; left: 9%;  width: 20px; animation: twinkle 4s ease-in-out infinite 1.5s; }
 .deco-star-br  { bottom: 28%; right: 11%; width: 24px; animation: twinkle 3s ease-in-out infinite 0.8s; }
 
-/* 植物・装飾 */
-.deco-leaf-l  { bottom: 0; left: 0;  width: 90px;  }
-.deco-leaf-r  { bottom: 0; right: 0; width: 90px;  }
-.deco-berry   { top: 52%; left: 2%;  width: 64px;  }
-.deco-flower  { top: 38%; right: 3%; width: 44px; animation: twinkle 6s ease-in-out infinite; }
+/* 植物・装飾 — opacityを少し上げて存在感を保ちつつ馴染ませる */
+.deco-leaf-l  { bottom: 0; left: -1%;  width: 100px; opacity: 0.5; }
+.deco-leaf-r  { bottom: 0; right: -1%; width: 100px; opacity: 0.5; }
+.deco-berry   { top: 52%; left: 1%;   width: 60px;  opacity: 0.4; }
+.deco-flower  { top: 38%; right: 2%;  width: 40px;  opacity: 0.35; animation: twinkle 8s ease-in-out infinite; }
 
 @keyframes floatSlow {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-6px); }
 }
 @keyframes twinkle {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.55; transform: scale(0.82); }
+  50% { opacity: 0.65; transform: scale(0.9); }
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -1201,10 +1202,10 @@ a { text-decoration: none; color: inherit; }
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     max-width: 900px;
-    gap: var(--space-3xl); /* 64px */
-    width: 100%;
+    gap: var(--space-2xl); /* 48px */
+    width: auto;
     margin: 0 auto;
   }
 
@@ -1217,10 +1218,10 @@ a { text-decoration: none; color: inherit; }
   }
 
   .hero-col-right {
-    flex: 1;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   /* ヒーローのモックアップを大きく */
@@ -1247,21 +1248,21 @@ a { text-decoration: none; color: inherit; }
     margin-top: var(--space-xs);
   }
 
-  /* 装飾イラストを中央エリアに寄せる */
-  .deco-cloud-tl { left: 10%; }
-  .deco-cloud-tr { right: 10%; }
-  .deco-cloud-bl { left: 12%; }
-  .deco-cloud-br { right: 10%; }
-  .deco-star-tl  { left: 16%; }
-  .deco-star-tr  { right: 18%; }
-  .deco-star-ml  { left: 12%; }
-  .deco-star-mr  { right: 14%; }
-  .deco-star-bl  { left: 15%; }
-  .deco-star-br  { right: 16%; }
-  .deco-berry    { left: 10%; }
-  .deco-flower   { right: 10%; }
-  .deco-leaf-l   { left: 8%; }
-  .deco-leaf-r   { right: 8%; }
+  /* 装飾イラストを端に寄せて自然にはみ出させる */
+  .deco-cloud-tl { left: -2%;  width: 200px; }
+  .deco-cloud-tr { right: -3%; width: 180px; }
+  .deco-cloud-bl { left: -1%;  width: 140px; }
+  .deco-cloud-br { right: -2%; width: 170px; }
+  .deco-star-tl  { left: 14%; }
+  .deco-star-tr  { right: 16%; }
+  .deco-star-ml  { left: 10%; }
+  .deco-star-mr  { right: 12%; }
+  .deco-star-bl  { left: 13%; }
+  .deco-star-br  { right: 14%; }
+  .deco-berry    { left: 2%; }
+  .deco-flower   { right: 3%; }
+  .deco-leaf-l   { left: -1%; width: 110px; }
+  .deco-leaf-r   { right: -1%; width: 110px; }
 
   /* CTAセクション装飾も中央寄せ */
   .cta-deco-star-l  { left: 12%; }

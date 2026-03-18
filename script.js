@@ -73,15 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     question.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
 
-      // Close all other items
-      faqItems.forEach(other => {
-        if (other !== item) {
-          other.classList.remove('open');
-          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      // Toggle current item
+      // Toggle current item (multiple items can be open simultaneously)
       item.classList.toggle('open');
       question.setAttribute('aria-expanded', !isOpen);
     });

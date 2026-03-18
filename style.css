@@ -1159,6 +1159,92 @@ a { text-decoration: none; color: inherit; }
   color: var(--primary-dark);
 }
 
+/* ============ デスクトップ専用（PC版の見栄え改善） ============ */
+@media (min-width: 901px) {
+  /* コンテンツ最大幅を広げる */
+  :root {
+    --max-width: 1100px;
+  }
+
+  /* ヒーローのモックアップを大きく */
+  .phone-frame {
+    width: 280px;
+  }
+  .hero-momo-side-img {
+    width: 140px;
+  }
+
+  /* aboutセクション: イラストを大きく */
+  .about-img {
+    width: clamp(180px, 24vw, 240px);
+  }
+  .about-momo-img {
+    width: clamp(220px, 30vw, 300px);
+  }
+
+  /* できること: カードのパディングとイラストを拡大 */
+  .features-grid {
+    gap: var(--space-xl); /* 32px */
+  }
+  .feature-card {
+    padding: var(--space-2xl) var(--space-xl); /* 48px 32px */
+  }
+  .feature-img-wrap {
+    width: 130px;
+    height: 130px;
+    margin-bottom: var(--space-lg); /* 24px */
+  }
+  .feature-title {
+    font-size: var(--text-title3); /* 20px */
+    margin-bottom: var(--space-sm); /* 12px */
+  }
+  .feature-desc {
+    font-size: var(--text-body); /* 17px */
+  }
+
+  /* 使い方: ステップカードを広く */
+  .steps-grid {
+    gap: var(--space-sm); /* 12px（矢印含む） */
+  }
+  .step-card {
+    max-width: 300px;
+    padding: var(--space-2xl) var(--space-lg); /* 48px 24px */
+  }
+  .step-img-wrap {
+    width: 88px;
+    height: 88px;
+    margin-bottom: var(--space-md); /* 16px */
+  }
+  .step-title {
+    font-size: var(--text-title3); /* 20px */
+  }
+  .step-desc {
+    font-size: var(--text-body); /* 17px */
+  }
+  .step-arrow {
+    font-size: 26px;
+    padding: 0 14px;
+  }
+
+  /* FAQ: 幅を広げる */
+  .faq-list {
+    max-width: 820px;
+  }
+
+  /* フッター: リンク間隔を広げる */
+  .footer-links {
+    gap: var(--space-xs) var(--space-xl); /* 8px 32px */
+  }
+  .footer-links a {
+    font-size: var(--text-subhead); /* 15px */
+  }
+
+  /* ガイドページ: カード幅を制限 */
+  .subpage-content {
+    max-width: 720px;
+  }
+}
+
 /* ============ レスポンシブ ============ */
 @media (max-width: 900px) {
   .features-grid { grid-template-columns: 1fr; }

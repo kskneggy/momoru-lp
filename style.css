@@ -1128,8 +1128,8 @@ a { text-decoration: none; color: inherit; }
   background: var(--bg-card);
   border: 1.5px solid var(--border);
   border-radius: var(--r-lg);
-  padding: var(--space-lg) var(--space-lg);
-  margin-bottom: var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 .legal-toc-title {
   font-size: var(--text-headline);
@@ -1147,7 +1147,7 @@ a { text-decoration: none; color: inherit; }
 }
 .legal-toc-list li a {
   display: block;
-  padding: 6px 0;
+  padding: 4px 0;
   font-size: var(--text-subhead);
   color: var(--primary);
   font-weight: 500;
@@ -1173,6 +1173,30 @@ a { text-decoration: none; color: inherit; }
   .hero-momo-side-img {
     width: 140px;
   }
+
+  /* 装飾イラストを中央エリアに寄せる */
+  .deco-cloud-tl { left: 10%; }
+  .deco-cloud-tr { right: 10%; }
+  .deco-cloud-bl { left: 12%; }
+  .deco-cloud-br { right: 10%; }
+  .deco-star-tl  { left: 16%; }
+  .deco-star-tr  { right: 18%; }
+  .deco-star-ml  { left: 12%; }
+  .deco-star-mr  { right: 14%; }
+  .deco-star-bl  { left: 15%; }
+  .deco-star-br  { right: 16%; }
+  .deco-berry    { left: 10%; }
+  .deco-flower   { right: 10%; }
+  .deco-leaf-l   { left: 8%; }
+  .deco-leaf-r   { right: 8%; }
+
+  /* CTAセクション装飾も中央寄せ */
+  .cta-deco-star-l  { left: 12%; }
+  .cta-deco-star-r  { right: 12%; }
+  .cta-deco-heart-l { left: 14%; }
+  .cta-deco-heart-r { right: 12%; }
+  .cta-deco-cloud-l { left: 8%; }
+  .cta-deco-cloud-r { right: 8%; }
 
   /* aboutセクション: イラストを大きく */
   .about-img {
@@ -1262,7 +1286,7 @@ a { text-decoration: none; color: inherit; }
   .nav-cta-btn { display: none; }
   .nav-hamburger { display: flex; }
 
-  .hero { padding: 70px var(--page-margin) var(--space-md); min-height: auto; }
+  .hero { padding: 100px var(--page-margin) var(--space-md); min-height: auto; }
 
   /* セクション余白縮小 */
   .about { padding: var(--space-3xl) 0; }
@@ -1594,9 +1618,13 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* モバイル対応 */
+@media (max-width: 768px) {
+  .phone-frame { width: 220px; }
+  .phone-screen { min-height: 300px; }
+}
 @media (max-width: 480px) {
-  .phone-frame { width: 280px; }
-  .phone-screen { min-height: 360px; }
+  .phone-frame { width: 220px; }
+  .phone-screen { min-height: 300px; }
   .hero-momo-side-img { width: 100px; }
   .hero-momo-side { right: -36px; bottom: -8px; }
 }

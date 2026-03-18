@@ -1128,14 +1128,14 @@ a { text-decoration: none; color: inherit; }
   background: var(--bg-card);
   border: 1.5px solid var(--border);
   border-radius: var(--r-lg);
-  padding: var(--space-md) var(--space-lg);
-  margin-bottom: var(--space-lg);
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-md);
 }
 .legal-toc-title {
   font-size: var(--text-headline);
   font-weight: 700;
   color: var(--text);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 .legal-toc-list {
   list-style: none;
@@ -1143,17 +1143,17 @@ a { text-decoration: none; color: inherit; }
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
 }
 .legal-toc-list li a {
   display: block;
-  padding: 4px 0;
+  padding: 3px 0;
   font-size: var(--text-subhead);
   color: var(--primary);
   font-weight: 500;
   transition: color 0.2s;
-  min-height: var(--touch-target);
-  line-height: var(--touch-target);
+  min-height: 36px;
+  line-height: 1.5;
 }
 .legal-toc-list li a:hover {
   color: var(--primary-dark);
